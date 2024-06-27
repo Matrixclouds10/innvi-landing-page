@@ -1,0 +1,58 @@
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.banner_section .used_app ul li:not(:first-child) {
+  margin-left: 0;
+  margin-right: -20px;
+}
+
+.banner_section .app_btn li:last-child {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.task_app_section .dotes_blue {
+  right: -80px;
+  left: auto;
+}
+
+.task_app_section .task_img .screen_img {
+  margin-left: 0;
+  margin-right: -115px;
+}
+
+.task_app_section .task_text .section_title {
+  text-align: right;
+}
+
+.puprple_btn {
+      margin-left: 0;
+}
+
+.btn_bottom {
+      transform: translate(-11px, 0.52em);
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}
+
+.how_it_inner .steps_block.step_border::after {
+  left: auto;
+  right: calc(50% + 45px);
+}
+
+.downaload_section .app_btn li:last-child {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+footer .download_side {
+  text-align: left;
+}
+
+footer .download_side .app_btn li:last-child {
+  margin-left: 0;
+  margin-right: 25px;
+}
