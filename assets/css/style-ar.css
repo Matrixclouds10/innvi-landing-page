@@ -56,3 +56,10 @@ footer .download_side .app_btn li:last-child {
   margin-left: 0;
   margin-right: 25px;
 }
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}

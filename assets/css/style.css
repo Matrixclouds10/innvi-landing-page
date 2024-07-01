@@ -1011,16 +1011,16 @@ header {
 
 .about_section .app_statstic li .text p span {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 24px;
     color: var(--primary);
 }
 
 .about_section .app_statstic li .text p {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--black);
-    margin: 0;
-    line-height: 1.2;
+    font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0;
+  line-height: 1.7;
 }
 
 .about_section .video_block {
@@ -4080,4 +4080,31 @@ footer .logo img {
   mask-size: 100% 100%;
   color: var(--secondary) !important; 
 
+}
+
+.accordion-item {
+    margin-bottom: 30px;
+    border: none;
+}
+
+.accordion-header .accordion-button {
+    border-radius: 50px !important;
+    border: 2px solid var(--secondary);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.accordion-header .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+      margin-right: auto;
+      margin-left: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--secondary);
+    color: #fff;
 }
