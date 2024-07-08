@@ -984,21 +984,20 @@ header {
 
 .about_section .app_statstic {
     display: flex;
-    gap: 30px;
+    gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.about_section .app_statstic li:first-child,
-.about_section .app_statstic li:last-child {
-    width: 100%;
+.about_section .app_statstic li {
+    width: 48%;
     text-align: center;
 }
 
 .about_section .app_statstic li .text {
-    width: 160px;
-    height: 160px;
-    border-radius: 200px;
+    width: 100%;
+    height: 140px;
+    border-radius: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1007,6 +1006,7 @@ header {
     background-color: var(--bg-white);
     border: 1px solid var(--primary);
     margin: 0 auto;
+    padding: 5px;
 }
 
 .about_section .app_statstic li .text p span {
@@ -1016,7 +1016,7 @@ header {
 }
 
 .about_section .app_statstic li .text p {
-    font-size: 16px;
+    font-size: 14px;
   font-weight: 700;
   color: var(--black);
   margin: 0;
@@ -2020,10 +2020,10 @@ iframe#youtubevideo {
 /* ------Footer-Css-Start-------------- */
 footer {
     background-color: var(--black);
-    padding: 100px 0;
+    padding: 40px 0;
     padding-left: 15px !important;
     padding-right: 15px !important;
-    margin-top: 50px;
+    margin-top: 0px;
     /* background-image: url(../images/footer_bg.png); */
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -4107,4 +4107,19 @@ footer .logo img {
 .accordion-button:not(.collapsed) {
     background-color: var(--secondary);
     color: #fff;
+}
+
+.offcanvas {
+    height: 100vh;
+    background-color: #246eb7;
+}
+
+.offcanvas:not(.show) {
+    width: 0 !important;
+    overflow: hidden;
+}
+
+.navbar-toggler:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
 }

@@ -73,12 +73,12 @@
     }
 
     .about_section .app_statstic li .text {
-        width: 125px;
+        width: 100%;
         height: 125px;
     }
 
     .about_section .app_statstic li .text p span {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .service_section .service_text {
@@ -152,6 +152,9 @@
 }
 
 @media screen and (max-width:992px) {
+    .accordion-header .accordion-button {
+        font-size: 16px;
+    }
 
     /* navigation section */
     .navbar-toggler-icon {
@@ -655,7 +658,16 @@
 
 
 @media screen and (max-width:767px) {
-
+     .banner_section .app_btn {
+        gap: 10px;
+     }
+     .banner_section .app_btn li {
+    margin: 0;
+  }
+.banner_section .app_btn li:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
     body {
         /*font-size: 14px;*/
         text-align: center;
@@ -718,10 +730,7 @@
         margin-left: 0;
     }
 
-    .banner_section .app_btn li {
-        margin: 0 15px;
-    }
-
+   
     .banner_section .app_btn li a {
         padding: 10px 20px;
     }
