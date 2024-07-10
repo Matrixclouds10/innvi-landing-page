@@ -415,7 +415,7 @@ h3 {
 /* -----------Header-Css-Start------------------- */
 /* header wraper */
 header {
-    position: sticky;
+    position: static;
     top: 0;
     width: 100%;
     z-index: 99999;
@@ -651,7 +651,7 @@ header {
 
 /* hero slider heading h1 */
 .banner_section .banner_text h1 {
-    font-size: 45px;
+    font-size: 35px;
     color: #333333;
     letter-spacing: -1.5px;
     font-weight: 700;
@@ -660,6 +660,7 @@ header {
 
 .banner_section .banner_text h1 span {
     color: var(--primary);
+        font-size: 50px;
 }
 
 .banner_section .banner_text .type-wrap span {
