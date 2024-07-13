@@ -415,7 +415,7 @@ h3 {
 /* -----------Header-Css-Start------------------- */
 /* header wraper */
 header {
-    position: static;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 99999;
@@ -839,7 +839,7 @@ header {
     display: block;
     width: 155px;
     height: 155px;
-    background-color: var(--dark-black);
+    background-color: transparent;
     border-radius: 150px;
     display: flex;
     justify-content: center;
