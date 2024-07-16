@@ -4137,7 +4137,7 @@ footer .logo img {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
-.icon{
+.icon-2{
  position: fixed;
   bottom: 35px;
   left: 30px;
@@ -4145,7 +4145,7 @@ footer .logo img {
   height: 40px;
   z-index: 1000;
 }
-.icon img {
+.icon-2 img {
   width: 40px;
   height: 40px;
 }
