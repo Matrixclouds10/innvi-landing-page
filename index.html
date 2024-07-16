@@ -347,7 +347,7 @@
 
 
         <!-- How It Work Section Start -->
-        <section class="how_it_section white_text" id="contact">
+        <section class="how_it_section white_text">
             <div class="how_it_inner" data-aos="fade-in" data-aos-duration="1500">
                 <div class="dotes_blue"><img src="assets/images/blue_dotes.png" alt="image"></div>
                 <div class="container">
@@ -431,12 +431,12 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     لماذا استخدم تطبيق هلو ايجيبت ؟
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
+                            <div id="collapseOne" class="accordion-collapse collapse "
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     هلو ايجيبت هو تطبيق يسهل لزوار مصر العربيه و المقيمين فيها من دول مجلس التعاون و
@@ -547,41 +547,62 @@
         <!-- About Us End -->
 
         <!-- Beautifull-interface-Section start -->
-        <section class="row_am interface_section pb-0">
+        <section class="row_am interface_section" id="contact">
             <!-- container start -->
-            <div class="container-fluid">
+            <div class="container">
                 <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                    <span class="title_badge">صفحات من التطبيق</span>
-                    <h2>تصميم يقدم <span>تجربة مستخدم </span> رائعة</h2>
+                    <h2>تواصل <span> معنا</span></h2>
                 </div>
 
-                <!-- screen slider start -->
-                <div class="screen_slider" data-aos="fade-up" data-aos-duration="1500">
-                    <div id="screen_slider" class="owl-carousel owl-theme" dir="ltr">
-                        <div class="item">
-                            <div class="screen_frame_img">
-                                <img src="assets/images/bannerScreen.png" alt="image">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="screen_frame_img">
-                                <img src="assets/images/bannerScreen2.png" alt="image">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="screen_frame_img">
-                                <img src="assets/images/bannerScreen3.png" alt="image">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="screen_frame_img">
-                                <img src="assets/images/ios.png" alt="image">
-                            </div>
-                        </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="contact-from-wrapper ">
+                            <form id="contact">
+                                <div class="contact-page-form">
+                                    <div class="contact-input">
+                                        <div class="contact-inner mb-3">
+                                            <input name="name" type="text" placeholder="الاسم">
+                                            <span class="text-danger" id="name"></span>
+                                        </div>
+                                        <div class="contact-inner mb-3">
+                                            <input name="email" type="email" placeholder="البريد الالكتروني">
+                                            <span class="text-danger" id="email"></span>
+                                        </div>
+                                    </div>
 
+                                    <div class="contact-inner mb-3">
+                                        <input name="phone" type="number" placeholder="الهاتف">
+                                        <span class="text-danger" id="phone"></span>
+                                    </div>
+
+                                    <div class="contact-inner mb-3">
+                                        <input name="subject" type="text" placeholder="الموضوع">
+                                        <span class="text-danger" id="subject"></span>
+                                    </div>
+
+                                    <div class="contact-inner mb-3 contact-message">
+                                        <textarea name="message" placeholder="الرسالة"></textarea>
+                                        <span class="text-danger" id="message"></span>
+                                    </div>
+                                    <div class="contact-submit-btn mb-3 ">
+                                        <div class="btn_block">
+                                            <a class="btn puprple_btn" href="#">ارسال الرسالة </a>
+                                            <div class="btn_bottom"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 text-center">
+                        <div class="peatures_image-wrap section-space--mb_40">
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/ios.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- screen slider end -->
             </div>
             <!-- container end -->
         </section>
@@ -651,28 +672,14 @@
         <div class="go_top" id="Gotop">
             <span><i class="icofont-arrow-up"></i></span>
         </div>
-
-        <!-- Video Model Start -->
-        <div class="modal fade youtube-video" id="myModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button id="close-video" type="button" class="button btn btn-default text-right"
-                        data-dismiss="modal">
-                        <i class="icofont-close-line-circled"></i>
-                    </button>
-                    <div class="modal-body">
-                        <div id="video-container" class="video-container">
-                            <iframe id="youtubevideo" width="640" height="360" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Video Model End -->
     </div>
     <!-- Page-wrapper-End -->
+    <div class="icon">
+        <a href="#">
+            <img src="assets/images/whatapp.png" alt="">
+        </a>
+    </div>
 
     <!-- Jquery-js-Link -->
     <script src="assets/js/jquery.js"></script>
