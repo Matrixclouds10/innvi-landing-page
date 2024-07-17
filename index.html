@@ -29,6 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.8/build/css/intlTelInput.css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
@@ -554,40 +556,34 @@
                     <h2>تواصل <span> معنا</span></h2>
                 </div>
 
-                <div class="row align-items-center">
+                <div class="row align-items-center pt-4">
                     <div class="col-lg-7 col-md-7">
                         <div class="contact-from-wrapper ">
                             <form id="contact">
                                 <div class="contact-page-form">
                                     <div class="contact-input">
                                         <div class="contact-inner mb-3">
-                                            <input name="email" type="email" placeholder="البريد الالكتروني">
-                                            <span class="text-danger" id="email"></span>
+                                            <input id="phone" type="tel" placeholder="0123456789">
                                         </div>
                                         <div class="contact-inner mb-3">
                                             <input name="name" type="text" placeholder="الاسم">
-                                            <span class="text-danger" id="name"></span>
                                         </div>
                                     </div>
-
                                     <div class="contact-inner mb-3">
-                                        <input name="phone" type="number" placeholder="الهاتف">
-                                        <span class="text-danger" id="phone"></span>
+                                        <input class="w-100" name="email" type="email" placeholder="البريد الالكتروني">
                                     </div>
+
 
                                     <div class="contact-inner mb-3">
                                         <input name="subject" type="text" placeholder="الموضوع">
-                                        <span class="text-danger" id="subject"></span>
                                     </div>
 
                                     <div class="contact-inner mb-3 contact-message">
                                         <textarea name="message" placeholder="الرسالة"></textarea>
-                                        <span class="text-danger" id="message"></span>
                                     </div>
                                     <div class="contact-submit-btn mb-3 ">
                                         <div class="btn_block">
                                             <a class="btn puprple_btn" href="#">ارسال الرسالة </a>
-                                            <div class="btn_bottom"></div>
                                         </div>
                                     </div>
 
@@ -598,7 +594,7 @@
                     <div class="col-lg-5 col-md-5 text-center">
                         <div class="peatures_image-wrap section-space--mb_40">
                             <div class="image">
-                                <img class="img-fluid" src="assets/images/ios.png" alt="">
+                                <img class="img-fluid" src="assets/images/contact.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -678,8 +674,22 @@
     <script src="assets/js/aos.js"></script>
     <!-- Typed Js Cdn -->
     <script src='assets/js/typed.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.8/build/js/intlTelInput.min.js"></script>
     <!-- main-js-Link -->
     <script src="assets/js/main.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            initialCountry: "auto",
+            geoIpLookup: callback => {
+                fetch("https://ipapi.co/json")
+                    .then(res => res.json())
+                    .then(data => callback(data.country_code))
+                    .catch(() => callback("us"));
+            },
+            utilsScript: "/intl-tel-input/js/utils.js?1720774106479" // just for formatting/placeholders etc
+        });
+    </script>
 
     <script>
         $("#typed").typed({

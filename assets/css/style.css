@@ -4174,3 +4174,16 @@ footer .logo img {
   padding: 3px 20px;
   height: 56px;
 }
+
+.iti {
+    width: 100%;
+}
+[dir="rtl"] .iti--allow-dropdown .iti__country-container {
+  right: auto !important;
+  left: 0 !important;
+}
+[dir="rtl"] .iti--allow-dropdown input.iti__tel-input, [dir="rtl"] .iti--allow-dropdown input.iti__tel-input[type="text"], [dir="rtl"] .iti--allow-dropdown input.iti__tel-input[type="tel"] {
+  padding-left: var(--iti-selected-country-arrow-padding) !important;
+  padding-right: var(--iti-input-padding) !important;
+  margin-right: 0;
+}
