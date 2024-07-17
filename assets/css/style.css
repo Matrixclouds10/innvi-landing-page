@@ -4187,3 +4187,9 @@ footer .logo img {
   padding-right: var(--iti-input-padding) !important;
   margin-right: 0;
 }
+
+
+ .accordion-header .accordion-button ,
+.accordion-body {
+    text-align: right;
+}
