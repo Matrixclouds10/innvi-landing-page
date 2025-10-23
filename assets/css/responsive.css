@@ -200,6 +200,7 @@
     .navbar-toggler {
         padding-right: 0;
         line-height: 1.7;
+        margin-top: 30px;
     }
 
     .navbar-expand-lg .navbar-nav {
@@ -270,6 +271,7 @@
     header {
         padding-top: 10px;
         padding-bottom: 10px;
+        height: 100%;
     }
 
     .navbar-expand-lg .navbar-nav .nav-item:not(:last-child) {
